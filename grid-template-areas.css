@@ -1,0 +1,44 @@
+body {
+  color: #f4f811;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 200px;
+}
+
+div {
+  background-color: #e29126;
+  padding: 15px;
+}
+
+div > div {
+  background-color: #267be2;
+}
+
+.site {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "cab cab cab cab"
+    "corpo corpo corpo menu"
+    "rod rod rod rod";
+  grid-gap: 15px;
+}
+
+.site .cabecalho {
+  grid-area: cab;
+}
+
+.site .corpo {
+  grid-area: corpo;
+}
+
+.site .menu {
+  grid-area: menu;
+}
+
+.site .rodape {
+  grid-area: rod;
+}

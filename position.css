@@ -1,0 +1,47 @@
+body {
+  color: #f4f811;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 200px;
+}
+
+div {
+  background-color: #e29126;
+  margin: 10px;
+  padding: 10px;
+}
+
+div > div {
+  background-color: #267be2;
+}
+
+#fixa {
+  background-color: #267be2;
+  margin: 0;
+  position: fixed;
+  bottom: 5px;
+  left: 10px;
+  right: 10px;
+}
+
+#relativo {
+  position: relative;
+  height: 150px;
+  padding: 0;
+}
+
+#relativo > * {
+  position: absolute;
+  margin: 0;
+}
+
+#relativo #a {
+  top: 0;
+  left: 0;
+}
+
+#relativo #b {
+  right: 0;
+  bottom: 0;
+}
